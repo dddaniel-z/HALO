@@ -18,7 +18,6 @@ HALO addresses this redundancy with two adaptive learnable operators:
 ```text
 HALO/
 ├── code/
-│   ├── cfg_infer.yaml        # Inference configuration
 │   ├── cfg_train.toml        # Training configuration
 │   ├── datasets.py           # Dataset loading and mixture preparation
 │   ├── gtcrn.py              # Baseline GTCRN implementation
