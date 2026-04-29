@@ -1,0 +1,60 @@
+[network_config]
+
+
+[DDP]
+world_size = 1   # number of available gpus
+
+[optimizer]
+lr = 1e-3
+
+[loss]
+loss_func = 'hybrid'
+
+[listener]
+listener_sr = 16000
+
+[FFT]
+n_fft = 512
+hop_length = 256
+win_length = 512
+
+[train_dataset]
+noisy_folder = ''
+clean_folder = ''
+shuffle = false
+num_tot = 0
+wav_len = 0
+train_sample_epoch = true
+num_data_per_epoch = 10000
+csv_path = ''
+
+[train_dataloader]
+batch_size = 8
+num_workers = 4
+drop_last = true
+pin_memory = true
+
+[validation_dataset]
+noisy_folder = ''
+clean_folder = ''
+shuffle = false
+num_tot = 0
+wav_len = 0
+
+[validation_dataloader]
+batch_size = 1
+num_workers = 4
+pin_memory = true
+
+[trainer]
+epochs = 300
+save_checkpoint_interval = 1
+clip_grad_norm_value = 3.0
+exp_path = ''
+resume = false
+resume_datetime = 0
+resume_step = 0
+
+[scheduler]
+factor = 0.5
+patience = 10
