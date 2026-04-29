@@ -1,9 +1,5 @@
 # HALO: Half-Frame-Rate Adaptive Learnable Operator for Lightweight STFT-Based Speech Enhancement
 
-This repository provides supplementary materials for the anonymous submission:
-
-**HALO: Half-Frame-Rate Adaptive Learnable Operator for Lightweight STFT-Based Speech Enhancement**
-
 HALO is a causal plug-in module for lightweight STFT-based speech enhancement. It reduces overlap-induced temporal redundancy by running the enhancement backbone at a half internal frame rate and then restoring the enhanced spectrum to the original STFT grid. The original STFT/ISTFT procedure is preserved, and no additional algorithmic lookahead is introduced.
 
 ## Overview
