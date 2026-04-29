@@ -1,9 +1,0 @@
-network:
-  root: 
-  exp_name: 
-  cpt_name: model_0001
-  checkpoint: ${network.exp_path}/checkpoints/${network.cpt_name}.tar
-  exp_path: ${network.root}/${network.exp_name}
-  cfg_toml: ${network.exp_path}/config.toml
-
-
