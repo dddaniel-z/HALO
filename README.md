@@ -23,7 +23,6 @@ HALO/
 │   ├── gtcrn.py              # Baseline GTCRN implementation
 │   ├── gtcrn_halo.py         # GTCRN with HALO plug-in module
 │   ├── loss.py               # Training loss functions
-│   ├── score_utils.py        # Evaluation utilities
 │   ├── train.py              # Training entry point
 │   └── trainer.py            # Training loop
 │
